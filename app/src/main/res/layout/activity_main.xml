@@ -9,17 +9,17 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:weightSum="10"
         android:orientation="vertical"
+        android:weightSum="10"
         >
         <TextView
             android:id="@+id/tv_status"
-            android:text="M"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="4pt"
-            android:layout_weight="2"
             android:layout_gravity="right"
+            android:layout_weight="2"
+            android:text="M"
+            android:textSize="4pt"
             android:textStyle="bold"
 
             />
@@ -30,20 +30,20 @@
         >
         <TextView
             android:id="@+id/tv_calculation"
-            android:text="1+2"
-            android:singleLine="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="15pt"
             android:ellipsize="start"
+            android:singleLine="true"
+            android:text="1+2"
+            android:textSize="15pt"
             />
         <TextView
             android:id="@+id/tv_result"
-            android:text="3"
-            android:layout_alignParentRight="true"
-            android:layout_below="@+id/tv_calculation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_calculation"
+            android:text="3"
             android:textSize="15pt"
             android:textStyle="bold"/>
     </RelativeLayout>
@@ -52,8 +52,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:layout_marginTop="30dp"
+        android:orientation="vertical"
         >
         <LinearLayout
             android:layout_width="match_parent"
@@ -62,19 +62,19 @@
             android:weightSum="5">
 
             <Button
-                android:id="@+id/btn_allcls"
+                android:id="@+id/btn_mc"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_margin="3dp"
                 android:layout_weight="1"
                 android:background="@drawable/rounded"
                 android:onClick="onClick"
-                android:text="AC"
+                android:text="MC"
                 android:textColor="@color/white"
                 android:textStyle="bold" />
 
             <Button
-                android:id="@+id/btn_mread"
+                android:id="@+id/btn_mr"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_margin="3dp"
@@ -82,6 +82,18 @@
                 android:background="@drawable/rounded"
                 android:onClick="onClick"
                 android:text="MR"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_ms"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded"
+                android:onClick="onClick"
+                android:text="MS"
                 android:textColor="@color/white"
                 android:textStyle="bold" />
 
@@ -109,18 +121,6 @@
                 android:textColor="@color/white"
                 android:textStyle="bold" />
 
-            <Button
-                android:id="@+id/btn_backspace"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="3dp"
-                android:layout_weight="1"
-                android:background="@drawable/rounded"
-                android:onClick="onClick"
-                android:text="clr"
-                android:textColor="@color/white"
-                android:textStyle="bold" />
-
         </LinearLayout>
 
         <LinearLayout
@@ -130,26 +130,26 @@
             android:weightSum="5">
 
             <Button
-                android:id="@+id/btn_openc"
+                android:id="@+id/btn_ce"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_margin="3dp"
                 android:layout_weight="1"
                 android:background="@drawable/rounded"
                 android:onClick="onClick"
-                android:text="("
+                android:text="CE"
                 android:textColor="@color/white"
                 android:textStyle="bold" />
 
             <Button
-                android:id="@+id/btn_closec"
+                android:id="@+id/btn_c"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_margin="3dp"
                 android:layout_weight="1"
                 android:background="@drawable/rounded"
                 android:onClick="onClick"
-                android:text=")"
+                android:text="C"
                 android:textColor="@color/white"
                 android:textStyle="bold" />
 
@@ -161,7 +161,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/rounded"
                 android:onClick="onClick"
-                android:text="^"
+                android:text="x^2"
                 android:textColor="@color/white"
                 android:textStyle="bold" />
 
@@ -178,14 +178,14 @@
                 android:textStyle="bold" />
 
             <Button
-                android:id="@+id/btn_pi"
+                android:id="@+id/btn_bks"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_margin="3dp"
                 android:layout_weight="1"
                 android:background="@drawable/rounded"
                 android:onClick="onClick"
-                android:text="π"
+                android:text="bks"
                 android:textColor="@color/white"
                 android:textStyle="bold" />
 
@@ -321,14 +321,14 @@
                 android:textStyle="bold" />
 
             <Button
-                android:id="@+id/btn_ans"
+                android:id="@+id/btn_1x"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_margin="3dp"
                 android:layout_weight="1"
                 android:background="@drawable/rounded"
                 android:onClick="onClick"
-                android:text="ANS"
+                android:text="1/x"
                 android:textColor="@color/white"
                 android:textStyle="bold" />
 
@@ -344,14 +344,14 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:layout_weight="4">
+            android:layout_weight="4"
+            android:orientation="vertical">
 
             <LinearLayout
-                android:weightSum="4"
-                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4">
 
                 <Button
                     android:id="@+id/btn_1"
@@ -402,10 +402,10 @@
             </LinearLayout>
 
             <LinearLayout
-                android:weightSum="4"
-                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="4">
 
                 <Button
                     android:id="@+id/btn_0"
