@@ -43,6 +43,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_below="@+id/tv_calculation"
+            android:singleLine="true"
             android:text="3"
             android:textSize="15pt"
             android:textStyle="bold"/>
@@ -185,7 +186,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/rounded"
                 android:onClick="onClick"
-                android:text="bks"
+                android:text="del"
                 android:textColor="@color/white"
                 android:textStyle="bold" />
 
